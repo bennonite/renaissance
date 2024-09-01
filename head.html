@@ -69,3 +69,12 @@ font-size: 1.1rem;
 }
 
 </style>
+
+<script>
+  var socialIcons = document.querySelectorAll("#icons01 a");
+  if (socialIcons){
+    socialIcons.forEach( icon => {
+      icon.target = "_blank"
+    })
+  }
+</script>
