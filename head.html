@@ -17,7 +17,7 @@ font-style: normal;
 }
 
 @font-face {
-font-family: 'Kessler';
+font-family: 'Kessler Display';
 src: url('https://bennonite.github.io/renaissance/fonts/kesslersuperdisplay-regular.woff') format('woff'),
 url('https://bennonite.github.io/renaissance/fonts/kesslersuperdisplay-regular.otf') format('otf');
 font-weight: 400;
@@ -25,7 +25,7 @@ font-style: normal;
 }
 
 @font-face {
-font-family: 'Kessler';
+font-family: 'Kessler Display';
 src: url('https://bennonite.github.io/renaissance/fonts/kesslersuperdisplay-italic.woff') format('woff'),
 url('https://bennonite.github.io/renaissance/fonts/kesslersuperdisplay-italic.otf') format('otf');
 font-weight: 400;
@@ -33,16 +33,24 @@ font-style: italic;
 }
 
 @font-face {
-  font-family: 'Kessler';
+  font-family: 'Kessler Text';
   src: url('https://bennonite.github.io/renaissance/fonts/kesslertext-medium.woff') format('woff'),
   url('https://bennonite.github.io/renaissance/fonts/kesslertext-medium.otf') format('otf');
   font-weight: 500;
   font-style: normal;
 }
 
+  @font-face {
+  font-family: 'Kessler Text';
+  src: url('https://bennonite.github.io/renaissance/fonts/kesslertext-regular.woff') format('woff'),
+  url('https://bennonite.github.io/renaissance/fonts/kesslertext-regular.otf') format('otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   font-weight: 400;
-  font-family: 'Kessler', sans-serif;
+  font-family: 'Kessler Text', sans-serif;
   -webkit-font-smoothing: antialiased; /* For WebKit browsers */
   -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
 }
@@ -62,17 +70,18 @@ body {
 }
 
 #description {
-  font-family: 'Kessler', sans-serif;
+  font-family: 'Kessler Text', sans-serif;
   font-weight: 500;
   font-size: 1.1rem;
 }
 
-#confirmation-title {
-  font-family: 'Barnaby', sans-serif;
+#section-title {
+  font-family: 'Kessler Text', sans-serif;
+  font-weight: 500;
   font-size: 2rem;
   color: #fff;
-  letter-spacing: 16px;
   line-height: 140%;
+  letter-spacing: 1px;
 }
 
 </style>
