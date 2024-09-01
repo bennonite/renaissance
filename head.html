@@ -84,13 +84,36 @@ body {
   letter-spacing: 1px;
 }
 
+@media(max-width:1400px){
+  #page-title {
+    font-size:2.4rem;
+  }
+}
+
+@media(max-width:600px){
+  #page-title {
+    font-size: 1.4rem;
+    letter-spacing: 12px;
+    line-height: 160%;
+  }
+  #page-title .page-title-pre {
+    font-size: 2rem;
+  }
+  #description {
+    font-size: 0.9rem;
+  }
+}
+
 </style>
 
 <script>
-  var socialIcons = document.querySelectorAll("#icons01 a");
-  if (socialIcons){
-    socialIcons.forEach( icon => {
+  window.setTimeout(()=> {
+    var socialIcons = document.querySelectorAll("#social-icons a");
+    if (socialIcons.length){
+      socialIcons.forEach( icon => {
       icon.target = "_blank"
-    })
-  }
+      })
+    } 
+  }, 200)
+
 </script>
